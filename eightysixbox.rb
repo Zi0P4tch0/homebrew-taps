@@ -37,9 +37,9 @@ class Eightysixbox < Formula
     s = <<~EOS
       Download the latest roms from https://github.com/86Box/roms/releases and unpack them in a convenient location.
 
-      Their path can be adjusted with the "-r" flag.
+      The ROMS path can be adjusted with the "-r" flag.
 
-      e.h. if you put the roms in "~/86box-roms", you would start 86Box like this:
+      e.g. if you put the roms in "~/86box-roms", you would start 86Box like this:
 
       86Box -r "~/86box-roms"
 
