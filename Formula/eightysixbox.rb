@@ -7,12 +7,17 @@ class Eightysixbox < Formula
 
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
+  depends_on xcode: :build
 
   depends_on "faudio"
   depends_on "freetype"
   depends_on "qt@5"
   depends_on "rtmidi"
   depends_on "sdl2"
+
+  on_linux do
+    depends_on "openal-soft"
+  end
 
   def install
     system "cmake", "-S", ".", "-B", "build",
