@@ -8,8 +8,9 @@ class Eightysixbox < Formula
   bottle do
     root_url "https://github.com/Zi0P4tch0/homebrew-taps/releases/download/eightysixbox-3.2.1"
     rebuild 1
-    sha256 cellar: :any,                 big_sur:      "f68d332cb56e4f5285c8c7cd1325ec49a0b617ee0f39cf854259852e7fde2c3f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "74fffb57d29cef18ab6258ab73e09ab142d3ce8f13b6eb4a0ff383ca584cc31a"
+    sha256 cellar: :any,                 arm64_monterey: "043fd087e77038aa1d4c937442d922c98bf640d72d68e1300a1fef837d8cc8fe"
+    sha256 cellar: :any,                 big_sur:        "f68d332cb56e4f5285c8c7cd1325ec49a0b617ee0f39cf854259852e7fde2c3f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "74fffb57d29cef18ab6258ab73e09ab142d3ce8f13b6eb4a0ff383ca584cc31a"
   end
 
   depends_on "cmake" => :build
