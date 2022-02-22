@@ -3,7 +3,7 @@ class Eightysixbox < Formula
   homepage "https://86box.net/"
   url "https://github.com/86Box/86Box/archive/refs/tags/v3.2.1.tar.gz"
   sha256 "f7df87b4076fbdad2dccc2e26074f54f3b6f1f66e51b41b31ba9c206048ae5df"
-  license "GPL-2.0"
+  license "GPL-2.0-or-later"
 
   depends_on "cmake" => :build
   depends_on "pkg-config" => :build
