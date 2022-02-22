@@ -19,7 +19,7 @@ class Eightysixbox < Formula
                     "-DQt5_DIR=#{Formula["qt@5"].lib}/cmake/Qt5",
                     "-DQt5LinguistTools_DIR=#{Formula["qt@5"].lib}/cmake/Qt5LinguistTools",
                     (Hardware::CPU.arm? ? "-DDYNAREC=OFF" : ""),
-                    (OS::mac? ? "-DCMAKE_MACOSX_BUNDLE=OFF" : ""),
+                    (OS.mac? ? "-DCMAKE_MACOSX_BUNDLE=OFF" : ""),
                     *std_cmake_args
 
     system "cmake", "--build", "build"
