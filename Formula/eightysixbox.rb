@@ -26,9 +26,7 @@ class Eightysixbox < Formula
                     (Hardware::CPU.arm? ? "-DDYNAREC=OFF" : ""),
                     (OS.mac? ? "-DCMAKE_MACOSX_BUNDLE=OFF" : ""),
                     *std_cmake_args
-
     system "cmake", "--build", "build"
-
     system "cmake", "--install", "build"
   end
 
