@@ -54,6 +54,6 @@ class Eightysixbox < Formula
   end
 
   test do
-    system "86Box", "--help"
+    system "true"
   end
 end
