@@ -17,6 +17,7 @@ class Eightysixbox < Formula
   depends_on "pkg-config" => :build
   depends_on xcode: :build
 
+  depends_on "eightysixbox-roms"
   depends_on "faudio"
   depends_on "freetype"
   depends_on "qt@5"
@@ -40,13 +41,9 @@ class Eightysixbox < Formula
 
   def caveats
     s = <<~EOS
-      Download the latest roms from https://github.com/86Box/roms/releases and unpack them in a convenient location.
+      Launch the emulator as follows:
 
-      The ROMS path can be adjusted with the "-r" flag.
-
-      e.g. if you put the roms in "~/86box-roms", you would start 86Box like this:
-
-      86Box -r "~/86box-roms"
+      86Box -r "$(brew --prefix eightysixbox-roms)"
 
     EOS
 
