@@ -54,6 +54,7 @@ class Eightysixbox < Formula
   end
 
   test do
+    # Test disabled as the app requires a display.
     system "true"
   end
 end
